@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     //Deklarasi variabel untuk menyimpan email dan password
     String nama, password;
 
+    View tvRegister;
+
 
 
     @Override
@@ -34,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
         //Menghubungkan variabel edPassword dengan componen button pada layout
         edPassword = findViewById(R.id.edPassword);
+
+        View tvRegister = findViewById(R.id.tvRegister);
 
         //Membuat fungsi onclick pada button btnLogin
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -74,6 +78,11 @@ public class MainActivity extends AppCompatActivity {
                         i.putExtras(b);
 
                         startActivity(i);
+                    } else {
+                        if (tvRegister.equals(tvRegister)) {
+                            Toast t = Toast.makeText(getApplicationContext(), "", Toast.LENGTH_LONG);
+                            t.show();
+                        }
                     }
                 }
             }

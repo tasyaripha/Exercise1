@@ -46,6 +46,7 @@
         android:importantForAutofill="no"
         android:inputType="textPassword"
         android:maxLines="1"
+        app:passwordToggleEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"

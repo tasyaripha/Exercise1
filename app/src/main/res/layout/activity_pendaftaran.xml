@@ -32,7 +32,7 @@
         android:layout_marginRight="10dp">
 
         <EditText
-            android:id="@+id/enama"
+            android:id="@+id/eNama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -141,20 +141,125 @@
         </RadioGroup>
 
         <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:orientation="vertical"
+            android:id="@+id/rgAgama2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp">
 
             <RadioButton
-                android:id="@+id/radioButton7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:id="@+id/rbHi"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:text="Hindu" />
 
             <RadioButton
-                android:id="@+id/radioButton6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="RadioButton" />
+                android:id="@+id/rbBd"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:text="Budha" />
+
+            <RadioButton
+                android:id="@+id/rbKg"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:text="Konghucu" />
         </RadioGroup>
+
+        <RadioGroup
+            android:orientation="vertical"
+            android:id="@+id/rgAgama3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp">
+
+            <RadioButton
+                android:id="@+id/rbPk"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:text="Penganut Kepercayaan" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PDaftar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Masukkan Email"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PdafPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Masukkan Password"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Pdafrepass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/edrePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Masukkan Kembali Password"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.4"
+            android:text="Batal"
+            app:cornerRadius="30dp"/>
+
+        <Button
+            android:id="@+id/btnRegistrasi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.4"
+            android:text="Daftar"
+            app:cornerRadius="30dp"/>
     </LinearLayout>
 </LinearLayout>
